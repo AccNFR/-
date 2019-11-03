@@ -1,0 +1,5 @@
+import os
+from subprocess import run, PIPE
+pth = 'C:\\Users\\User\\CLionProjects\\untitled\\cmake-build-debug\\untitled.exe'
+out = run(pth, input = '11', stdout = PIPE, encoding='ascii', timeout = 0.01).stdout
+print(out)
